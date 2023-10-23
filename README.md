@@ -42,7 +42,7 @@ Analisis Gangguan Tidur: Mengidentifikasi terjadinya gangguan tidur seperti Inso
 
 Dataset: [Sleep Health and Lifestyle Dataset](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset).
 
-### Variabel-variabel pada Heart Failure Prediction Dataset adalah sebagai berikut:
+### Variabel-variabel pada Sleep Health and Lifestyle Dataset adalah sebagai berikut:
 - Person ID: Pengenal untuk setiap individu.
 - Gender:  Jenis kelamin orang tersebut (Pria/Wanita).
 - Age: The age of the person in years.
