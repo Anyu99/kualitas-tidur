@@ -63,6 +63,35 @@ Dataset: [Sleep Health and Lifestyle Dataset](https://www.kaggle.com/datasets/uo
 - Sleep Apnea :  Individu mengalami henti napas saat tidur, yang mengakibatkan gangguan pola tidur dan potensi risiko kesehatan.
 
 ## Data Preparation
+Cek dulu nilai yang kosong dalam dataset:
+```
+df.isnull().sum()
+```
+Dikarenakan tidak ada dataset yang kosong kita lanjut
+
+cek korelasi antar atribut
+```
+plt.figure(figsize=(10,8))
+sns.heatmap(df.corr(),annot=True)
+```
+![image](https://github.com/Anyu99/kualitas-tidur/assets/136258491/a998f7fb-9f26-4834-8018-7045d78c81b2)
+
+Visualisasi jumlah tipe gangguan tidur perkategorinya:
+```
+plt.figure(figsize=(3,3))
+sns.set(font_scale=0.8)
+sns.histplot(data=df, x='Sleep Disorder')
+```
+![image](https://github.com/Anyu99/kualitas-tidur/assets/136258491/62a5d7ac-483c-45c9-8ee4-0acf78057a58)
+
+Distribusi Kategori BMI:
+
+![image](https://github.com/Anyu99/kualitas-tidur/assets/136258491/8605d14a-7afd-442d-b3f8-910f2d3fb4ed)
+
+Distribusi Pekerjaan:
+
+![image](https://github.com/Anyu99/kualitas-tidur/assets/136258491/ac10722a-878a-450f-814e-b315cc972980)
+
 1. Data preparatation yang pertama kali dilakukan adalah merubah tipe data object (Gender, Occupation, BMI Category dan Sleep Disorder) menjadi integer menggunakan library yanng disediakan oleh sklearn yaitu LabelEncoder:
 ```bash
 from sklearn.preprocessing import LabelEncoder
